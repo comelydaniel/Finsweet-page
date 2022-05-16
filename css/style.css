@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-primary {
+    color: rgb(18, 66, 101) !important; 
+}
+
+.btn-primary {
+    background: rgb(36, 135, 206) !important;
+}
+
+.grid-icon {
+    margin: 20px 0 0 20px; 
+    font-size: 50px;
+    color: rgb(36, 135, 206);
+}
+
+#sub-hero-section {
+    padding: 50px;
+    background: url(../img/onepage.bg.jpg), no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative
+}
+
+#sub-hero-section::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    inset: 0px;
+}
+
+#sub-hero-section #header-section { 
+    z-index: 1;
+    position: relative;
+}
+
+.grid-hover:hover {
+    transform: scale(1.1);
+}
+
+.card-h5:hover {
+    color: rgb(36, 135, 206);
+}
+
+.check-icon{
+    font-size: 20px;
+    color: rgb(36, 135, 206);
+    margin-right: 10px;
+}
+
+.list-style {
+    list-style: none;
+    padding-left: 0!important;
+}
+
+#portfolio-section {
+    background: rgb(248, 251, 254);
+}
+
+.brand-img {
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    filter: grayscale(100);
+}
+
+.brand-img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+#brands-section {
+    background: #f8fbfe;
+}
+
+.leaders-img {
+    border-radius: 50%;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.swipe-bg {
+    background: #f3f9fd;
+    position: relative;
+}
+
+.swipe-bg::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #f3f9fd;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+}
