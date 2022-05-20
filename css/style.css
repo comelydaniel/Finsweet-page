@@ -58,7 +58,7 @@
     padding-left: 0!important;
 }
 
-#portfolio-section {
+#counter-section {
     background: rgb(248, 251, 254);
 }
 
@@ -100,4 +100,181 @@
     position: absolute;
     bottom: -20px;
     left: calc(50% - 20px);
+} 
+
+#service-section {
+    background: #f8fbfe;
 }
+
+.service-card {
+    transition: all ease-in-out 0.3s;
+    padding: 70px 0px 80px 0px;
+}
+
+.service-card .service-icon {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+.service-card .service-icon i {
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.service-card .icon-blue i {
+    color: rgb(36, 135, 206);;
+}
+
+.service-icon svg {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.service-card:hover {
+    box-shadow: 0px 0 35px 0 rgb(0 0 0 / 8%);
+}
+
+.service-card:hover .icon-blue svg path {
+    fill: #47aeff;
+}
+
+.service-card:hover .icon-blue i, .service-card:hover .icon-orange i, .service-card:hover .icon-pink i, .service-card:hover .icon-yellow i, .service-card:hover .icon-red i, .service-card:hover .icon-green i {
+    color: #ffff;
+}
+
+.service-card .icon-orange i {
+    color: #ffa76e;
+}
+
+.service-card:hover .icon-orange svg path {
+    fill: #ffa76e;
+}
+
+.service-card .icon-pink i {
+    color: #e80368;
+}
+
+.service-card:hover .icon-pink svg path {
+    fill: #e80368;
+}
+
+.service-card .icon-yellow i {
+    color: #ffbb2c;
+}
+
+.service-card:hover .icon-yellow svg path {
+    fill: #ffbb2c;
+}
+
+.service-card .icon-red i {
+    color: #ff5828;
+}
+
+.service-card:hover .icon-red svg path {
+    fill: #ff5828;
+}
+
+.service-card .icon-green i {
+    color: #11dbcf;
+}
+
+.service-card:hover .icon-green svg path {
+    fill: #11dbcf;
+}
+
+.portfolio-wrap {
+    position: relative;
+}
+
+.portfolio-wrap::before {
+    content: "";
+    background: rgba(36, 135, 206, 0.6);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio-wrap .portfolio-info::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    display: block;
+    z-index: 5;
+    transition: all 0.5s ease 0s;
+}
+
+.portfolio-wrap .portfolio-info::after {
+        content: "";
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+        z-index: 5;
+        display: block;
+        transition: all 0.5s ease 0s;
+}
+
+.portfolio-wrap .portfolio-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+    color: #fff;
+    opacity: 0;
+}
+
+.portfolio-wrap:hover::before {
+    opacity: 1;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio-links a {
+    color: #fff;
+    font-size: 45px;
+}
+
+.links {
+    text-decoration: none!important;
+    color: black!important;
+}
+
+.links:hover {
+    color: blue!important;
+}
+
+
+
+
+
